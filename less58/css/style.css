@@ -1,0 +1,45 @@
+body{
+    background-color:black;
+    color: white;
+}
+.wrapper{
+    margin: 0 auto;
+    padding: 0 30px;
+    display: flex;
+}
+.box{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    top: 300px;
+    right: -300px;
+    border-radius: 10%;
+    background-color: blue;
+}
+.box span{
+    opacity: 0;
+    position: absolute;
+    top: 100px;
+    left:75px;
+}
+.box:hover span{
+    opacity: 1;
+    background-color: orange;
+    transition-delay: 2s;
+}
+.box__scale{
+    width: 0px;
+    height: 10px;
+    position: absolute;
+    top: -50px;
+    left: -135px;
+    opacity: 0;
+}
+.box:hover .box__scale {
+    opacity: 1;
+    width:500px ;
+    background-color: #fff;
+    transition-duration: 2s;
+    transition-timing-function: ease-in;
+}
+
